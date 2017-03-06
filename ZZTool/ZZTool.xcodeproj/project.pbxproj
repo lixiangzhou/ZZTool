@@ -11,8 +11,8 @@
 		975E773A1E6D48C200D93502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E77381E6D48C200D93502 /* Main.storyboard */; };
 		975E773C1E6D48C200D93502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975E773B1E6D48C200D93502 /* Assets.xcassets */; };
 		975E773F1E6D48C200D93502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E773D1E6D48C200D93502 /* LaunchScreen.storyboard */; };
-		975E774B1E6D495C00D93502 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E77481E6D495C00D93502 /* AppDelegate.m */; };
-		975E774C1E6D495C00D93502 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E774A1E6D495C00D93502 /* ViewController.m */; };
+		975E77521E6D49E200D93502 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E774F1E6D49E200D93502 /* AppDelegate.m */; };
+		975E77531E6D49E200D93502 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E77511E6D49E200D93502 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,10 @@
 		975E773B1E6D48C200D93502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975E773E1E6D48C200D93502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		975E77401E6D48C200D93502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		975E77471E6D495C00D93502 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		975E77481E6D495C00D93502 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		975E77491E6D495C00D93502 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		975E774A1E6D495C00D93502 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		975E774E1E6D49E200D93502 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		975E774F1E6D49E200D93502 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		975E77501E6D49E200D93502 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		975E77511E6D49E200D93502 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,6 @@
 		975E77231E6D48C200D93502 = {
 			isa = PBXGroup;
 			children = (
-				975E77461E6D495C00D93502 /* Demo */,
 				975E772E1E6D48C200D93502 /* ZZTool */,
 				975E772D1E6D48C200D93502 /* Products */,
 			);
@@ -59,6 +58,7 @@
 		975E772E1E6D48C200D93502 /* ZZTool */ = {
 			isa = PBXGroup;
 			children = (
+				975E774D1E6D49E200D93502 /* Demo */,
 				975E772F1E6D48C200D93502 /* Supporting Files */,
 			);
 			path = ZZTool;
@@ -76,16 +76,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		975E77461E6D495C00D93502 /* Demo */ = {
+		975E774D1E6D49E200D93502 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				975E77471E6D495C00D93502 /* AppDelegate.h */,
-				975E77481E6D495C00D93502 /* AppDelegate.m */,
-				975E77491E6D495C00D93502 /* ViewController.h */,
-				975E774A1E6D495C00D93502 /* ViewController.m */,
+				975E774E1E6D49E200D93502 /* AppDelegate.h */,
+				975E774F1E6D49E200D93502 /* AppDelegate.m */,
+				975E77501E6D49E200D93502 /* ViewController.h */,
+				975E77511E6D49E200D93502 /* ViewController.m */,
 			);
-			name = Demo;
-			path = ZZTool/Demo;
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				975E774C1E6D495C00D93502 /* ViewController.m in Sources */,
-				975E774B1E6D495C00D93502 /* AppDelegate.m in Sources */,
+				975E77531E6D49E200D93502 /* ViewController.m in Sources */,
+				975E77521E6D49E200D93502 /* AppDelegate.m in Sources */,
 				975E77311E6D48C200D93502 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
