@@ -10,14 +10,20 @@
 
 @implementation UIView (ZZExtension)
 
-- (id)addView:(Class)clazz frame:(CGRect)frame {
+- (id)zz_addSubview:(Class)clazz frame:(CGRect)frame {
     UIView *view = [clazz new];
     view.frame = frame;
+    [self addSubview:view];
     return view;
 }
 
-- (id)addView:(Class)clazz {
-    return [self addView:clazz frame:CGRectZero];
+- (id)zz_addSubview:(Class)clazz {
+    return [self zz_addSubview:clazz frame:CGRectZero];
+}
+
+- (void)zz_setCornerRadius:(CGFloat)cornerRadius masksToBounds:(BOOL)masksToBounds {
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.masksToBounds = masksToBounds;
 }
 
 @end

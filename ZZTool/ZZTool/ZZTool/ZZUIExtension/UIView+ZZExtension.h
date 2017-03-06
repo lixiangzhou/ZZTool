@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (ZZExtension)
-- (id)addView:(Class)clazz;
-- (id)addView:(Class)clazz frame:(CGRect)frame;
+
+- (void)zz_setCornerRadius:(CGFloat)cornerRadius masksToBounds:(BOOL)masksToBounds;
+
+- (id)zz_addSubview:(Class)clazz;
+- (id)zz_addSubview:(Class)clazz frame:(CGRect)frame;
+
+
 @end

@@ -42,7 +42,7 @@
 
 - (void)setZz_height:(CGFloat)zz_height {
     CGRect rect = self.frame;
-    rect.size.width = zz_height;
+    rect.size.height = zz_height;
     self.frame = rect;
 }
 
@@ -66,6 +66,10 @@
     self.frame = rect;
 }
 
+- (CGFloat)zz_maxY {
+    return CGRectGetMaxY(self.frame);
+}
+
 - (void)setZz_centerX:(CGFloat)zz_centerX {
     CGPoint center = self.center;
     center.x = zz_centerX;
@@ -78,7 +82,7 @@
 
 - (void)setZz_centerY:(CGFloat)zz_centerY {
     CGPoint center = self.center;
-    center.x = zz_centerY;
+    center.y = zz_centerY;
     self.center = center;
 }
 

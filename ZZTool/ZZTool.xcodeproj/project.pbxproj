@@ -13,6 +13,8 @@
 		975E773F1E6D48C200D93502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975E773D1E6D48C200D93502 /* LaunchScreen.storyboard */; };
 		975E77521E6D49E200D93502 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E774F1E6D49E200D93502 /* AppDelegate.m */; };
 		975E77531E6D49E200D93502 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E77511E6D49E200D93502 /* ViewController.m */; };
+		975E77671E6D529E00D93502 /* UIView+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E77641E6D529E00D93502 /* UIView+ZZExtension.m */; };
+		975E77681E6D529E00D93502 /* UIView+ZZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E77661E6D529E00D93502 /* UIView+ZZFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,12 @@
 		975E774F1E6D49E200D93502 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		975E77501E6D49E200D93502 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		975E77511E6D49E200D93502 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		975E77631E6D529E00D93502 /* UIView+ZZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZZExtension.h"; sourceTree = "<group>"; };
+		975E77641E6D529E00D93502 /* UIView+ZZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZZExtension.m"; sourceTree = "<group>"; };
+		975E77651E6D529E00D93502 /* UIView+ZZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZZFrame.h"; sourceTree = "<group>"; };
+		975E77661E6D529E00D93502 /* UIView+ZZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZZFrame.m"; sourceTree = "<group>"; };
+		975E776A1E6D52FD00D93502 /* ZZUIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZUIExtension.h; sourceTree = "<group>"; };
+		975E77711E6D559600D93502 /* ZZTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZTool.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		975E772E1E6D48C200D93502 /* ZZTool */ = {
 			isa = PBXGroup;
 			children = (
+				975E77541E6D4A5200D93502 /* ZZTool */,
 				975E774D1E6D49E200D93502 /* Demo */,
 				975E772F1E6D48C200D93502 /* Supporting Files */,
 			);
@@ -85,6 +94,35 @@
 				975E77511E6D49E200D93502 /* ViewController.m */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		975E77541E6D4A5200D93502 /* ZZTool */ = {
+			isa = PBXGroup;
+			children = (
+				975E77711E6D559600D93502 /* ZZTool.h */,
+				975E77611E6D529E00D93502 /* ZZNSExtension */,
+				975E77621E6D529E00D93502 /* ZZUIExtension */,
+			);
+			path = ZZTool;
+			sourceTree = "<group>";
+		};
+		975E77611E6D529E00D93502 /* ZZNSExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZZNSExtension;
+			sourceTree = "<group>";
+		};
+		975E77621E6D529E00D93502 /* ZZUIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				975E776A1E6D52FD00D93502 /* ZZUIExtension.h */,
+				975E77631E6D529E00D93502 /* UIView+ZZExtension.h */,
+				975E77641E6D529E00D93502 /* UIView+ZZExtension.m */,
+				975E77651E6D529E00D93502 /* UIView+ZZFrame.h */,
+				975E77661E6D529E00D93502 /* UIView+ZZFrame.m */,
+			);
+			path = ZZUIExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975E77681E6D529E00D93502 /* UIView+ZZFrame.m in Sources */,
+				975E77671E6D529E00D93502 /* UIView+ZZExtension.m in Sources */,
 				975E77531E6D49E200D93502 /* ViewController.m in Sources */,
 				975E77521E6D49E200D93502 /* AppDelegate.m in Sources */,
 				975E77311E6D48C200D93502 /* main.m in Sources */,

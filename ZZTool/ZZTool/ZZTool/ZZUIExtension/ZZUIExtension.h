@@ -6,8 +6,9 @@
 //  Copyright © 2017年 lixiangzhou. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#ifndef ZZTool_h
+#define ZZTool_h
 
-@interface ZZUIExtension : UIView
+#import "ZZUIExtension.h"
 
-@end
+#endif
