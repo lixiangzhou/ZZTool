@@ -10,10 +10,23 @@
 
 @interface UIView (ZZExtension)
 
+- (UIViewController *)zz_controller;
+
+- (void)zz_removeAllSubviews;
+
+- (void)zz_setCircle;
 - (void)zz_setCornerRadius:(CGFloat)cornerRadius masksToBounds:(BOOL)masksToBounds;
+- (void)zz_setBorder:(UIColor *)color width:(CGFloat)width;
 
-- (id)zz_addSubview:(Class)clazz;
-- (id)zz_addSubview:(Class)clazz frame:(CGRect)frame;
+- (id)zz_addSubviewWithClazz:(Class)clazz;
+- (id)zz_addSubviewWithClazz:(Class)clazz frame:(CGRect)frame;
 
++ (id)zz_loadFromNib;
++ (id)zz_loadFromNibname:(NSString *)nibname;
+
+- (void)zz_cropImageWithRect:(CGRect)rect completion:(void(^)(UIImage *cropImage))completion;
+
+- (UIImage *)zz_snapshotImage;
+- (UIImage *)zz_snapshotImageAfterScreenUpdates:(BOOL)afterUpdates;
 
 @end

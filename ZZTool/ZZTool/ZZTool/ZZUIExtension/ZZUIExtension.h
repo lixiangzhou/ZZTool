@@ -6,9 +6,13 @@
 //  Copyright © 2017年 lixiangzhou. All rights reserved.
 //
 
-#ifndef ZZTool_h
-#define ZZTool_h
+#ifndef ZZUIExtension
+#define ZZUIExtension
 
-#import "ZZUIExtension.h"
+#import "UIView+ZZExtension.h"
+#import "UIView+ZZFrame.h"
+#import "UIAlertController+ZZExtension.h"
+
+
 
 #endif
