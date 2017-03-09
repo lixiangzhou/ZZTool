@@ -12,7 +12,17 @@
 
 + (instancetype)zz_alertFromController:(UIViewController *)controller WithTitle:(NSString *)title message:(NSString *)message action1Title:(NSString *)action1Title action1Style:(UIAlertActionStyle)action1Style action1Handler:(void (^)(UIAlertAction *action))action1Handler action2Title:(NSString *)action2Title action2Style:(UIAlertActionStyle)action2Style action2Handler:(void (^)(UIAlertAction *action))action2Handler
 {
-    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    return [self zz_alertType:UIAlertControllerStyleAlert fromController:controller WithTitle:title message:message action1Title:action1Title action1Style:action1Style action1Handler:action1Handler action2Title:action2Title action2Style:action2Style action2Handler:action2Handler];
+}
+
++ (instancetype)zz_styleSheetFromController:(UIViewController *)controller WithTitle:(NSString *)title message:(NSString *)message action1Title:(NSString *)action1Title action1Style:(UIAlertActionStyle)action1Style action1Handler:(void (^)(UIAlertAction *))action1Handler action2Title:(NSString *)action2Title action2Style:(UIAlertActionStyle)action2Style action2Handler:(void (^)(UIAlertAction *))action2Handler {
+    return [self zz_alertType:UIAlertControllerStyleActionSheet fromController:controller WithTitle:title message:message action1Title:action1Title action1Style:action1Style action1Handler:action1Handler action2Title:action2Title action2Style:action2Style action2Handler:action2Handler];
+}
+
+
++ (instancetype)zz_alertType:(UIAlertControllerStyle)type fromController:(UIViewController *)controller WithTitle:(NSString *)title message:(NSString *)message action1Title:(NSString *)action1Title action1Style:(UIAlertActionStyle)action1Style action1Handler:(void (^)(UIAlertAction *action))action1Handler action2Title:(NSString *)action2Title action2Style:(UIAlertActionStyle)action2Style action2Handler:(void (^)(UIAlertAction *action))action2Handler
+{
+    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:type];
     
     if (action1Title != nil) {
         UIAlertAction *action1 = [UIAlertAction actionWithTitle:action1Title style:action1Style handler:action1Handler];
@@ -27,6 +37,7 @@
     [controller presentViewController:alertVc animated:YES completion:nil];
     return alertVc;
 }
+
 
 
 @end
