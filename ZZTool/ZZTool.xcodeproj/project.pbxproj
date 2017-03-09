@@ -19,6 +19,9 @@
 		975E77791E6D7E7400D93502 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E77781E6D7E7400D93502 /* TestView.m */; };
 		975E777B1E6D7E7E00D93502 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975E777A1E6D7E7E00D93502 /* TestView.xib */; };
 		975E777E1E6D839000D93502 /* UIAlertController+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 975E777D1E6D839000D93502 /* UIAlertController+ZZExtension.m */; };
+		977EB4971E718CCD008C47B7 /* NSDate+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 977EB4961E718CCD008C47B7 /* NSDate+ZZExtension.m */; };
+		977EB49A1E718CF7008C47B7 /* NSDateFormatter+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 977EB4991E718CF7008C47B7 /* NSDateFormatter+ZZExtension.m */; };
+		977EB49D1E718FCE008C47B7 /* NSCalendar+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 977EB49C1E718FCE008C47B7 /* NSCalendar+ZZExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,12 @@
 		975E777A1E6D7E7E00D93502 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		975E777C1E6D839000D93502 /* UIAlertController+ZZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+ZZExtension.h"; sourceTree = "<group>"; };
 		975E777D1E6D839000D93502 /* UIAlertController+ZZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+ZZExtension.m"; sourceTree = "<group>"; };
+		977EB4951E718CCD008C47B7 /* NSDate+ZZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZZExtension.h"; sourceTree = "<group>"; };
+		977EB4961E718CCD008C47B7 /* NSDate+ZZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZZExtension.m"; sourceTree = "<group>"; };
+		977EB4981E718CF7008C47B7 /* NSDateFormatter+ZZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+ZZExtension.h"; sourceTree = "<group>"; };
+		977EB4991E718CF7008C47B7 /* NSDateFormatter+ZZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+ZZExtension.m"; sourceTree = "<group>"; };
+		977EB49B1E718FCE008C47B7 /* NSCalendar+ZZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+ZZExtension.h"; sourceTree = "<group>"; };
+		977EB49C1E718FCE008C47B7 /* NSCalendar+ZZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+ZZExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +150,12 @@
 				975E77661E6D529E00D93502 /* UIView+ZZFrame.m */,
 				974C0FD71E6D89D000053323 /* UIScreen+ZZExtension.h */,
 				974C0FD81E6D89D000053323 /* UIScreen+ZZExtension.m */,
+				977EB4951E718CCD008C47B7 /* NSDate+ZZExtension.h */,
+				977EB4961E718CCD008C47B7 /* NSDate+ZZExtension.m */,
+				977EB4981E718CF7008C47B7 /* NSDateFormatter+ZZExtension.h */,
+				977EB4991E718CF7008C47B7 /* NSDateFormatter+ZZExtension.m */,
+				977EB49B1E718FCE008C47B7 /* NSCalendar+ZZExtension.h */,
+				977EB49C1E718FCE008C47B7 /* NSCalendar+ZZExtension.m */,
 			);
 			path = ZZUIExtension;
 			sourceTree = "<group>";
@@ -225,7 +240,10 @@
 				975E77521E6D49E200D93502 /* AppDelegate.m in Sources */,
 				975E77791E6D7E7400D93502 /* TestView.m in Sources */,
 				975E77311E6D48C200D93502 /* main.m in Sources */,
+				977EB4971E718CCD008C47B7 /* NSDate+ZZExtension.m in Sources */,
 				975E777E1E6D839000D93502 /* UIAlertController+ZZExtension.m in Sources */,
+				977EB49A1E718CF7008C47B7 /* NSDateFormatter+ZZExtension.m in Sources */,
+				977EB49D1E718FCE008C47B7 /* NSCalendar+ZZExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
