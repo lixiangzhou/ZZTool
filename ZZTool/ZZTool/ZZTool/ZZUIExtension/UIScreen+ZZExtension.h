@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIScreen (ZZExtension)
+///
 + (CGFloat)zz_width;
 + (CGFloat)zz_height;
 @end

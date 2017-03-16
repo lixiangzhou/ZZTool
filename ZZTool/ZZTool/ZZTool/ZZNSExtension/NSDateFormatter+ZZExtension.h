@@ -8,7 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+#ifndef ZZDateFormatter_h
+#define ZZDateFormatter_h
+
 #define zz_dateFormatter [NSDateFormatter zz_sharedFormatter]
+
+
+#endif
+
 
 @interface NSDateFormatter (ZZExtension)
 + (instancetype)zz_sharedFormatter;
